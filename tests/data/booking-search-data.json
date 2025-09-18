@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Mumbai hotel search and rating validation",
+        "destination": "Mumbai",
+        "checkInDate": "15",
+        "checkOutDate": "16",
+        "adults": 1,
+        "children": 0,
+        "rooms": 1,
+        "expectedSortOrder": "rating_desc"
+    }
+]

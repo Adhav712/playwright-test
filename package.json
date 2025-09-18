@@ -1,15 +1,33 @@
 {
   "name": "playright",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright POM with Allure reporting for Booking.com tests",
   "main": "index.js",
-  "scripts": {},
-  "keywords": [],
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "allure:generate": "allure generate -c allure-results -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:clean": "rimraf allure-results allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "booking.com",
+    "pom",
+    "allure"
+  ],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.12.3",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
-    "@types/node": "^24.3.3"
+    "@types/node": "^24.3.3",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^2.13.0",
+    "typescript": "^5.5.0",
+    "rimraf": "^6.0.0"
   }
 }
